@@ -51,6 +51,7 @@ app.use(cors({
     }
 }));
 
+
 new Api(app).registerGroup();
 
 app.use('/static', express.static(join(__dirname, 'static')));
